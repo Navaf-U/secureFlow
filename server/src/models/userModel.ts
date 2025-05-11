@@ -1,4 +1,4 @@
-import mongoose, { Schema, InferSchemaType ,Model} from "mongoose";
+import mongoose, { Schema, InferSchemaType, Model } from "mongoose";
 
 const UserSchema = new Schema({
     username: { type: String, required: true, unique: true },

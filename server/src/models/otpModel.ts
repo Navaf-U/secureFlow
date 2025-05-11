@@ -9,6 +9,6 @@ const otpSchema = new Schema({
 
 type IOtp = InferSchemaType<typeof otpSchema>;
 
- const Otp:Model<IOtp>=mongoose.model("Otp", otpSchema);
- 
- export default Otp;
+const Otp: Model<IOtp> = mongoose.model("Otp", otpSchema);
+
+export default Otp;
