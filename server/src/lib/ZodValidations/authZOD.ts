@@ -10,19 +10,19 @@ export const registerSchema = z.object({
 });
 
 export const loginSchema = z.object({
-    username: z.string().optional(),
-    email: z.string().email().optional(),
-    password: z.string(),
-  }).refine((data) => data.username || data.email, {
-    message: "Either username or email is required",
-    path: ["username", "email"], 
-  });
+  username: z.string().optional(),
+  email: z.string().email().optional(),
+  password: z.string(),
+}).refine((data) => data.username || data.email, {
+  message: "Either username or email is required",
+  path: ["username", "email"],
+});
 
-  export const otpSchema = z.object({
-    email: z.string().email(),
-  });
-  
-  export const verifyOtpSchema = z.object({
-    email: z.string().email(),
-    otp: z.string().length(6),
-  });
+export const otpSchema = z.object({
+  email: z.string().email(),
+});
+
+export const verifyOtpSchema = z.object({
+  email: z.string().email(),
+  otp: z.string().length(6),
+});
