@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import loginImage from '../../assets/test.jpg'
+import Image from 'next/image';
 
 const LoginPage: React.FC = () => {
   return (
@@ -64,61 +66,7 @@ const LoginPage: React.FC = () => {
         </div>
 
         <div className="w-full md:w-3/5 relative h-48 md:h-auto bg-emerald-800">
-          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <radialGradient id="moonGlow" cx="0.7" cy="0.3" r="0.3">
-                <stop offset="0%" stopColor="#fff" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="#fff" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-            <rect x="0" y="0" width="800" height="600" fill="#2d6a5a" />
-            <circle cx="650" cy="120" r="50" fill="#f8e9d6" opacity="0.9" />
-            <circle cx="650" cy="120" r="80" fill="url(#moonGlow)" />
-            <path d="M0,200 Q100,150 200,190 T400,170 T600,190 T800,170 V600 H0 Z" fill="#1d4d3e" />
-            <path d="M-100,250 Q0,200 100,240 T300,210 T500,250 T700,220 T900,250 V600 H-100 Z" fill="#183830" />
-            <path d="M-200,350 Q-100,300 0,340 T200,300 T400,350 T600,310 T800,360 V600 H-200 Z" fill="#122a24" />
-            <path d="M-100,450 Q50,430 200,450 T500,430 T800,450 V600 H-100 Z" fill="#0c1f1a" />
-            <path d="M0,600 L800,600 L800,450 Q650,430 500,450 T200,430 T0,450 Z" fill="#1a3c32" opacity="0.7" />
-            <path d="M200,600 L600,600 L600,470 Q500,450 400,470 T200,450 Z" fill="#fff" opacity="0.05" />
-            <g transform="translate(550, 280) scale(0.8)">
-              <path d="M0,0 C10,-30 30,-60 20,-120" stroke="#433" strokeWidth="6" fill="none" />
-              <path d="M0,0 C-5,-20 -25,-50 -40,-90" stroke="#433" strokeWidth="4" fill="none" />
-              <path d="M-20,-60 C-25,-70 -15,-85 -5,-100" stroke="#433" strokeWidth="2" fill="none" />
-              <g opacity="0.9">
-                <circle cx="20" cy="-120" r="25" fill="#fae7ef" />
-                <circle cx="0" cy="-110" r="20" fill="#fae7ef" />
-                <circle cx="35" cy="-105" r="22" fill="#fae7ef" />
-                <circle cx="10" cy="-95" r="18" fill="#fae7ef" />
-                <circle cx="30" cy="-140" r="20" fill="#fae7ef" />
-                <circle cx="-40" cy="-90" r="15" fill="#fae7ef" />
-                <circle cx="-30" cy="-100" r="18" fill="#fae7ef" />
-                <circle cx="-5" cy="-100" r="15" fill="#fae7ef" />
-                <circle cx="25" cy="-125" r="8" fill="#f8c1db" />
-                <circle cx="5" cy="-105" r="7" fill="#f8c1db" />
-                <circle cx="-35" cy="-95" r="6" fill="#f8c1db" />
-                <circle cx="15" cy="-135" r="7" fill="#f8c1db" />
-              </g>
-            </g>
-            <g transform="translate(650, 320) scale(0.6)">
-              <path d="M0,0 C5,-20 15,-40 10,-70" stroke="#433" strokeWidth="4" fill="none" />
-              <g opacity="0.8">
-                <circle cx="10" cy="-70" r="20" fill="#fae7ef" />
-                <circle cx="-5" cy="-60" r="18" fill="#fae7ef" />
-                <circle cx="20" cy="-55" r="15" fill="#fae7ef" />
-                <circle cx="5" cy="-65" r="5" fill="#f8c1db" />
-              </g>
-            </g>
-
-            <g opacity="0.6">
-              <path d="M520,450 Q530,460 540,450" stroke="#fae7ef" strokeWidth="1" fill="none" />
-              <path d="M530,460 Q540,470 550,460" stroke="#fae7ef" strokeWidth="1" fill="none" />
-              <path d="M580,470 Q590,480 600,470" stroke="#fae7ef" strokeWidth="1" fill="none" />
-              <path d="M600,480 Q610,490 620,480" stroke="#fae7ef" strokeWidth="0.7" fill="none" />
-              <path d="M570,490 Q580,500 590,490" stroke="#fae7ef" strokeWidth="0.7" fill="none" />
-            </g>
-            <path d="M500,420 Q520,400 550,415 T580,410 T600,430 V450 H500 Z" fill="#2a3a36" />
-          </svg>
-
+         <Image src={loginImage} alt="Login Image" className='w-full h-full' />
         </div>
       </div>
     </div>

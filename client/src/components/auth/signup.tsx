@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Image from 'next/image';
-
+import signupImage from '../../assets/signup-img.jpg'
 const SignupPage: React.FC = () => {
   const [preview, setPreview] = useState<string | null>(null);
   const formik = useFormik({
@@ -143,7 +143,8 @@ const SignupPage: React.FC = () => {
           </div>
         </div>
         {/* right side section gonna add soon */}
-        <div className="w-full md:w-3/5 relative h-48 md:h-auto bg-emerald-800">
+        <div className="w-full md:w-3/5 relative h-full md:h-auto bg-emerald-800">
+        <Image src={signupImage} alt="Signup" fill className="object-cover" />
         </div>
       </div>
     </div>
