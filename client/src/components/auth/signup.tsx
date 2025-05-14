@@ -40,18 +40,17 @@ const SignupPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-rose-50 flex items-center justify-center p-4">
-      <div className="w-full max-w-5xl h-auto bg-stone-50 rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row">
+    <div className="min-h-screen bg-stone-50 dark:bg-stone-900 flex items-center justify-center p-4">
+      <div className="w-full max-w-5xl h-auto bg-white dark:bg-black rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row">
         <div className="w-full md:w-2/5 p-8 md:p-10 relative">
           <div className="absolute top-5 left-5">
             <span className="text-emerald-800 font-medium text-sm">•IND</span>
           </div>
           <div className="mt-8">
-            <h1 className="text-2xl font-normal text-stone-900 mb-1">Create an account</h1>
+            <h1 className="text-2xl font-normal text-stone-900 mb-1 dark:text-stone-50">Create an account</h1>
             <p className="text-stone-600 text-sm mb-6">Sign up to get started</p>
 
             <form onSubmit={formik.handleSubmit} className="space-y-4">
-
               <div className="flex flex-col items-center space-y-2">
                 <label htmlFor="image" className="cursor-pointer">
                   <div className="h-20 w-20 rounded-full bg-stone-200 overflow-hidden flex items-center justify-center shadow-inner">
