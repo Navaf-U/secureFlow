@@ -1,9 +1,10 @@
+import SignupPage from '@/components/auth/signup'
 import React from 'react'
 
 function page() {
   return (
     <div>
-      Hello from signup
+      <SignupPage/>
     </div>
   )
 }
