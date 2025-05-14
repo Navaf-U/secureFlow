@@ -11,7 +11,7 @@ const LoginPage: React.FC = () => {
           </div>
           <div className="mt-8">
             <h1 className="text-2xl font-normal text-stone-900 mb-1">Welcome back!</h1>
-            <p className="text-stone-600 text-sm mb-6">contttttt.</p>
+            <p className="text-stone-600 text-sm mb-6">Sign in to your account</p>
 
             <div className="space-y-4">
               <div>
@@ -118,7 +118,7 @@ const LoginPage: React.FC = () => {
             </g>
             <path d="M500,420 Q520,400 550,415 T580,410 T600,430 V450 H500 Z" fill="#2a3a36" />
           </svg>
-          
+
         </div>
       </div>
     </div>
