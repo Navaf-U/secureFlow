@@ -3,14 +3,14 @@ import Link from 'next/link';
 
 const LoginPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-rose-50 flex items-center justify-center p-4">
-      <div className="w-full max-w-5xl h-96 md:h-auto bg-stone-50 rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row">
+    <div className="min-h-screen bg-rose-50 dark:bg-stone-900 flex items-center justify-center p-4">
+      <div className="w-full max-w-5xl h-96 md:h-auto bg-stone-50 dark:bg-black rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row">
         <div className="w-full md:w-2/5 p-8 md:p-10 relative">
           <div className="absolute top-5 left-5">
             <span className="text-emerald-800 font-medium text-sm">•IND</span>
           </div>
           <div className="mt-8">
-            <h1 className="text-2xl font-normal text-stone-900 mb-1">Welcome back!</h1>
+            <h1 className="text-2xl font-normal text-stone-900 dark:text-stone-50 mb-1">Welcome back!</h1>
             <p className="text-stone-600 text-sm mb-6">Sign in to your account</p>
 
             <div className="space-y-4">
@@ -56,7 +56,7 @@ const LoginPage: React.FC = () => {
 
             <div className="mt-6 text-center text-xs text-stone-500">
               Don&apos;t have an account?{" "}
-              <Link href="#" className="text-emerald-700 hover:underline">
+              <Link href="/signup" className="text-emerald-700 hover:underline">
                 Sign up
               </Link>
             </div>
