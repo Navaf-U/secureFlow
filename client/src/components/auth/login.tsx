@@ -66,7 +66,7 @@ const LoginPage: React.FC = () => {
         </div>
 
         <div className="w-full md:w-3/5 relative h-48 md:h-auto bg-emerald-800">
-         <Image src={loginImage} alt="Login Image" className='w-full h-full' />
+          <Image src={loginImage} alt="Login Image" className='w-full h-full' />
         </div>
       </div>
     </div>

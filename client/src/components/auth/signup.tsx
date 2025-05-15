@@ -144,7 +144,7 @@ const SignupPage: React.FC = () => {
         </div>
         {/* right side section gonna add soon */}
         <div className="w-full md:w-3/5 relative h-full md:h-auto bg-emerald-800">
-        <Image src={signupImage} alt="Signup" fill className="object-cover" />
+          <Image src={signupImage} alt="Signup" fill className="object-cover" />
         </div>
       </div>
     </div>
