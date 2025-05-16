@@ -71,8 +71,3 @@
 - MongoDB Atlas account
 - Redis instance
 - Google Cloud CLI (for deployment) | Render and Vercel
-
-
-Repo
-git: `https://github.com/Navaf-U/secureFlow.git`
-cd client & server
